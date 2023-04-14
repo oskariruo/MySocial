@@ -33,7 +33,7 @@ export const getUserFriends = async (req, res) => {
 }
 
 /* UPDATING FRIENDS */
-export default addRemoveFriend = async (req, res) => {
+export const addRemoveFriend = async (req, res) => {
     try {
         const { id, friendId } = req.params;
         const user = await User.getById(id);
